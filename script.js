@@ -25,7 +25,7 @@ function compute()
         }
     }
     var DB = new Date().getFullYear();
-    var futd = parseInt(DB,20) + parseInt(years, 20);
+    var futd = parseInt(DB,10) + parseInt(years, 10);
     var interest = principal * years * rate /100;
     var result = "if you deposit <mark>" + principal + "</mark>,<br> at an interest rate of <mark>" + rate + "</mark> % <br> You will receive an amount of <mark>" + interest + ",</mark><br> in the year <mark>" + futd + "</mark>";
     document.getElementById("result").innerHTML=result;
